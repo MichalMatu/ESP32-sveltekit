@@ -149,8 +149,8 @@
 			{@render children?.()}
 		</div>
 		<!-- Side Navigation -->
-		<div class="drawer-side z-30 shadow-lg">
-			<label for="main-menu" class="drawer-overlay"></label>
+                <div class="drawer-side z-30 shadow-lg">
+                        <label for="main-menu" class="drawer-overlay lg:hidden"></label>
 			<Menu
 				closeMenu={() => {
 					menuOpen = false;
