@@ -161,14 +161,17 @@
 {/if}
 
 <Modals>
-	<!-- svelte-ignore a11y_click_events_have_key_events -->
-	{#snippet backdrop({ close })}
-		<div
-			class="fixed inset-0 z-40 max-h-full max-w-full bg-black/20 backdrop-blur-sm"
-			transition:fade|global
-			onclick={() => close()}
-		></div>
-	{/snippet}
+       <!-- svelte-ignore a11y_click_events_have_key_events -->
+       {#snippet backdrop({ close })}
+               <div
+                       role="button"
+                       aria-label="Close modal"
+                       tabindex="0"
+                       class="fixed inset-0 z-40 max-h-full max-w-full bg-black/20 backdrop-blur-sm"
+                       transition:fade|global
+                       onclick={() => close()}
+               ></div>
+       {/snippet}
 </Modals>
 
 <Toast />
