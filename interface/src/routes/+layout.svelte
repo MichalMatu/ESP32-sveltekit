@@ -150,7 +150,8 @@
 		</div>
 		<!-- Side Navigation -->
 		<div class="drawer-side z-30 shadow-lg">
-			<label for="main-menu" class="drawer-overlay"></label>
+			<!-- Darken the background when the menu is open -->
+			<label for="main-menu" class="drawer-overlay bg-black/70"></label>
 			<Menu
 				closeMenu={() => {
 					menuOpen = false;
@@ -164,7 +165,7 @@
 	<!-- svelte-ignore a11y_click_events_have_key_events -->
 	{#snippet backdrop({ close })}
 		<div
-			class="fixed inset-0 z-40 max-h-full max-w-full bg-black/20 backdrop-blur-sm"
+			class="fixed inset-0 z-40 max-h-full max-w-full bg-black/70 backdrop-blur-sm"
 			transition:fade|global
 			onclick={() => close()}
 		></div>
