@@ -17,4 +17,5 @@ node_modules
 lib/framework/WWWData.h
 ssl_certs/cacert.pem
 /logs
+data/.gitkeep
 .aid
